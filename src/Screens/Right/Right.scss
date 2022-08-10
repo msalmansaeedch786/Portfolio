@@ -1,0 +1,26 @@
+.right__main{
+    max-height: 100vh;
+  display: flex;
+  .sidebar{
+    min-height: 100%;
+    width: 20%;
+    @media screen and (max-width:1300px){
+        display: none;
+    }
+  }
+  .mobile__sidebar{
+   display: none;
+    @media screen and (max-width:1300px){
+        display: block;
+    }
+  }
+  .right{
+    max-height: 100%;
+    width: 80%;
+    @media screen and (max-width:1300px){
+        width: 100%;
+
+    }
+
+  }
+}

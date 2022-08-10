@@ -1,0 +1,227 @@
+.about__container {
+  background-color: #111319;
+  color: white;
+  padding: 3rem 4rem;
+  @media screen and (max-width: 600px) {
+    padding: 3rem 1.5rem;
+  }
+  .about__heading {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .about__body {
+    margin-top: 3rem;
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+    .about__left {
+      width: 50%;
+      @media screen and (max-width: 1050px) {
+        width: 100%;
+      }
+      .left__heading {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+      .left__para {
+        font-size: 19px;
+        font-weight: 400;
+        margin-bottom: 15px;
+        // max-width: 90%;
+        color: rgba(255, 255, 255, 0.479);
+        margin-bottom: 2rem;
+        @media screen and (max-width: 500px) {
+          max-width: 100%;
+          font-size: 16px;
+        }
+      }
+      .skills {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+        @media screen and (max-width: 650px) {
+          flex-direction: column;
+          margin-bottom: 0.5rem;
+        }
+
+        .skill1 {
+          width: 45%;
+          @media screen and (max-width: 650px) {
+            width: 100%;
+          }
+          .title {
+            font-weight: 700;
+            margin-bottom: 20px;
+          }
+          .bar {
+            @media screen and (max-width: 650px) {
+              margin-bottom: 1.5rem;
+            }
+          }
+        }
+      }
+      .more__btn {
+        border-radius: 6px;
+        width: 35%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        height: 50px;
+        color: black;
+        background: #fff;
+        border-color: #000;
+        margin-top: 3rem;
+        font-size: 18px;
+        letter-spacing: 0.4px;
+        transition: 0.5s;
+        @media screen and (max-width: 650px) {
+          width: 100%;
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    .about__right {
+      position: relative;
+      @media screen and (max-width: 1050px) {
+        display: none;
+      }
+      .aboutimg {
+        height: 600px;
+        width: 100%;
+        border-radius: 20px;
+      }
+      .experience {
+        position: absolute;
+        bottom: 36px;
+        left: -40px;
+        z-index: 1;
+        width: 233px;
+        height: 233px;
+        border-radius: 100%;
+        background-color: #34495e;
+        text-align: center;
+      }
+      .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        width: 100%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        font-size: 19px;
+        font-weight: 500;
+
+        span {
+          font-size: 35px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .MuiLinearProgress-bar {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    top: 1px;
+    -webkit-transition: -webkit-transform 0.4s linear;
+    transition: transform 0.4s linear;
+    transform-origin: left;
+    background-color: #34495e;
+  }
+}
+
+.MuiDialog-paper {
+  background-color: #11161f !important;
+}
+
+.dialog__container {
+  .heading {
+    font-size: 25px;
+    margin-bottom: 35px;
+    border-bottom: 2px dashed #ddd;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: 700;
+  }
+  display: flex;
+  gap: 2rem 5rem;
+  @media screen and (max-width: 750px) {
+    flex-direction: column;
+  }
+  .data {
+    ul {
+      list-style: none;
+    }
+    li {
+      color: #8990a2;
+      font-size: 16px;
+      @media screen and (max-width: 750px) {
+        font-size: 13px;
+      }
+
+      margin-bottom: 5px;
+      span {
+        color: white;
+        max-width: 200px;
+        font-size: 17px;
+
+        margin-left: 8px;
+        @media screen and (max-width: 750px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .education {
+    .educations {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .border {
+      width: 2px;
+      background-color: rgba(255, 255, 255, 0.514);
+      position: absolute;
+      top: 44px;
+      height: 50px;
+      left: 21px;
+    }
+    .first__education {
+      position: relative;
+      display: flex;
+      gap: 1rem;
+      color: white;
+      .icon {
+        background-color: #34495e;
+        padding: 10px;
+        border-radius: 50px;
+        color: rgba(255, 255, 255, 0.726);
+      }
+      .degree__name {
+        font-size: 11px;
+        background-color: #34495e;
+        padding: 3px 10px;
+        text-align: center;
+        border-radius: 50px;
+        width: 75px;
+      }
+      .clg {
+        font-weight: 700;
+        margin-top: 0.5rem;
+        font-size: 17px;
+      }
+      .degree {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.568);
+      }
+    }
+  }
+}
